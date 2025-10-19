@@ -36,10 +36,10 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[hsl(var(--background))] via-blue-50 to-yellow-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-[hsl(var(--background))] via-slate-900 to-slate-800 flex items-center justify-center p-4">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-20 left-10 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
       <div className="w-full max-w-5xl relative z-10 animate-fade-in">
@@ -50,7 +50,7 @@ export default function Index() {
               <Icon name="Sparkles" className="w-8 h-8 text-primary absolute -top-2 -right-2" />
             </div>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-blue-600 to-accent bg-clip-text text-transparent mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-blue-400 to-accent bg-clip-text text-transparent mb-4">
             Telegram Stars
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground font-medium">
@@ -108,7 +108,7 @@ export default function Index() {
 
                 <Button 
                   type="submit" 
-                  className="w-full h-14 text-lg font-bold bg-gradient-to-r from-primary to-blue-600 hover:from-blue-600 hover:to-primary transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="w-full h-14 text-lg font-bold bg-gradient-to-r from-primary to-blue-500 hover:from-blue-500 hover:to-primary transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/30"
                 >
                   <Icon name="ShoppingCart" className="w-5 h-5 mr-2" />
                   Купить звёзды
