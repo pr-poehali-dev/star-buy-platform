@@ -36,10 +36,11 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[hsl(var(--background))] via-slate-900 to-slate-800 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-black flex items-center justify-center p-4">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-20 left-10 w-64 h-64 bg-primary/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="w-full max-w-5xl relative z-10 animate-fade-in">
@@ -50,7 +51,7 @@ export default function Index() {
               <Icon name="Sparkles" className="w-8 h-8 text-primary absolute -top-2 -right-2" />
             </div>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-blue-400 to-accent bg-clip-text text-transparent mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-yellow-300 to-white bg-clip-text text-transparent mb-4">
             Telegram Stars
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground font-medium">
@@ -59,7 +60,7 @@ export default function Index() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
-          <Card className="shadow-2xl border-2 hover:shadow-primary/20 transition-all duration-300">
+          <Card className="shadow-2xl shadow-primary/10 border-2 border-primary/30 hover:shadow-primary/30 hover:border-primary/50 transition-all duration-300 bg-gradient-to-br from-black to-neutral-900">
             <CardHeader className="space-y-2">
               <div className="flex items-center gap-2">
                 <Icon name="Zap" className="w-6 h-6 text-primary" />
@@ -108,7 +109,7 @@ export default function Index() {
 
                 <Button 
                   type="submit" 
-                  className="w-full h-14 text-lg font-bold bg-gradient-to-r from-primary to-blue-500 hover:from-blue-500 hover:to-primary transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/30"
+                  className="w-full h-14 text-lg font-bold bg-gradient-to-r from-primary to-yellow-500 hover:from-yellow-500 hover:to-primary transition-all duration-300 shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70"
                 >
                   <Icon name="ShoppingCart" className="w-5 h-5 mr-2" />
                   Купить звёзды
@@ -127,7 +128,7 @@ export default function Index() {
           </Card>
 
           <div className="space-y-4">
-            <Card className="shadow-xl border-2">
+            <Card className="shadow-xl shadow-primary/10 border-2 border-primary/30 bg-gradient-to-br from-black to-neutral-900">
               <CardHeader>
                 <div className="flex items-center gap-2">
                   <Icon name="Gift" className="w-6 h-6 text-accent" />
@@ -164,7 +165,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="shadow-xl border-2 bg-gradient-to-br from-card to-primary/5">
+            <Card className="shadow-xl shadow-primary/10 border-2 border-primary/30 bg-gradient-to-br from-black to-neutral-900">
               <CardContent className="pt-6">
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">

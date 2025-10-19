@@ -94,7 +94,7 @@ export default {
 					'100%': { backgroundPosition: '1000px 0' }
 				},
 				'glow': {
-					'0%, 100%': { boxShadow: '0 0 20px rgba(0, 136, 204, 0.5)' },
+					'0%, 100%': { boxShadow: '0 0 20px rgba(255, 215, 0, 0.4)' },
 					'50%': { boxShadow: '0 0 40px rgba(255, 215, 0, 0.8)' }
 				}
 			},
