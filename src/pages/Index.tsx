@@ -36,7 +36,10 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-secondary flex items-center justify-center p-4">
+    <div className="min-h-screen relative flex items-center justify-center p-4">
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/89b704f7-2aad-4cfd-8feb-c08bfbff5851/files/481daa7d-2d67-49cf-9802-5baf253da094.jpg)' }}></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-yellow-900/30"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,215,0,0.15),transparent_50%),radial-gradient(circle_at_70%_80%,rgba(255,193,7,0.1),transparent_50%)]"></div>
 
       <div className="w-full max-w-5xl relative z-10 animate-fade-in">
         <div className="text-center mb-12">
@@ -46,7 +49,7 @@ export default function Index() {
               <Icon name="Sparkles" className="w-8 h-8 text-primary absolute -top-2 -right-2" />
             </div>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-accent to-yellow-600 bg-clip-text text-transparent mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-200 to-amber-500 bg-clip-text text-transparent mb-4 drop-shadow-[0_0_30px_rgba(255,215,0,0.5)]">
             Telegram Stars
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground font-medium">
@@ -55,7 +58,7 @@ export default function Index() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
-          <Card className="shadow-lg border border-border hover:shadow-xl transition-all duration-200 bg-card">
+          <Card className="shadow-2xl shadow-yellow-900/50 border-2 border-yellow-600/50 hover:shadow-yellow-500/40 hover:border-yellow-500 transition-all duration-300 bg-gradient-to-br from-black/90 to-neutral-900/90 backdrop-blur-sm">
             <CardHeader className="space-y-2">
               <div className="flex items-center gap-2">
                 <Icon name="Zap" className="w-6 h-6 text-primary" />
@@ -104,7 +107,7 @@ export default function Index() {
 
                 <Button 
                   type="submit" 
-                  className="w-full h-14 text-lg font-bold bg-gradient-to-r from-primary to-yellow-500 hover:from-yellow-500 hover:to-primary transition-all duration-300 shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70"
+                  className="w-full h-14 text-lg font-bold bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 hover:from-yellow-500 hover:via-yellow-300 hover:to-yellow-500 transition-all duration-500 shadow-2xl shadow-yellow-500/60 hover:shadow-yellow-400/80 text-black animate-shimmer bg-[length:200%_100%]"
                 >
                   <Icon name="ShoppingCart" className="w-5 h-5 mr-2" />
                   Купить звёзды
@@ -123,7 +126,7 @@ export default function Index() {
           </Card>
 
           <div className="space-y-4">
-            <Card className="shadow-lg border border-border bg-card">
+            <Card className="shadow-2xl shadow-yellow-900/50 border-2 border-yellow-600/50 bg-gradient-to-br from-black/90 to-neutral-900/90 backdrop-blur-sm">
               <CardHeader>
                 <div className="flex items-center gap-2">
                   <Icon name="Gift" className="w-6 h-6 text-accent" />
@@ -136,8 +139,8 @@ export default function Index() {
                     key={idx}
                     className={`p-4 rounded-lg border-2 transition-all duration-300 cursor-pointer hover:scale-105 ${
                       pkg.popular
-                        ? 'bg-gradient-to-r from-primary/10 to-accent/10 border-primary shadow-lg'
-                        : 'bg-card hover:bg-muted/50 border-border'
+                        ? 'bg-gradient-to-r from-yellow-600/20 via-yellow-500/10 to-amber-600/20 border-yellow-500 shadow-lg shadow-yellow-500/30'
+                        : 'bg-gradient-to-r from-neutral-900/50 to-neutral-800/50 hover:from-neutral-800/60 hover:to-neutral-700/60 border-yellow-600/30'
                     }`}
                     onClick={() => setStarsAmount(pkg.stars.toString())}
                   >
@@ -160,7 +163,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="shadow-lg border border-border bg-card">
+            <Card className="shadow-2xl shadow-yellow-900/50 border-2 border-yellow-600/50 bg-gradient-to-br from-black/90 to-neutral-900/90 backdrop-blur-sm">
               <CardContent className="pt-6">
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">

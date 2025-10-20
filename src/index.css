@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    --background: 0 0% 7%;
+    --foreground: 45 100% 55%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
+    --card: 0 0% 10%;
+    --card-foreground: 45 100% 55%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 45 100% 55%;
 
-    --primary: 42 100% 50%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 45 100% 55%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 210 11% 96%;
-    --secondary-foreground: 0 0% 0%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 45 100% 55%;
 
-    --muted: 210 11% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 45 30% 60%;
 
-    --accent: 42 100% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 65% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 42 100% 50%;
+    --border: 45 80% 40%;
+    --input: 0 0% 15%;
+    --ring: 45 100% 55%;
 
     --radius: 1rem;
 
@@ -120,4 +120,17 @@
       "Segoe UI",
       sans-serif;
   }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 3s ease-in-out infinite;
 }
