@@ -46,7 +46,7 @@ export default function Index() {
               <Icon name="Sparkles" className="w-8 h-8 text-primary absolute -top-2 -right-2" />
             </div>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-yellow-300 to-white bg-clip-text text-transparent mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-accent to-yellow-600 bg-clip-text text-transparent mb-4">
             Telegram Stars
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground font-medium">
