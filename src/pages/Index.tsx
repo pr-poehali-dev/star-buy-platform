@@ -36,12 +36,7 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-amber-50 to-yellow-50 flex items-center justify-center p-4">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl"></div>
-      </div>
+    <div className="min-h-screen bg-gradient-to-b from-white to-secondary flex items-center justify-center p-4">
 
       <div className="w-full max-w-5xl relative z-10 animate-fade-in">
         <div className="text-center mb-12">
@@ -60,7 +55,7 @@ export default function Index() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
-          <Card className="shadow-2xl shadow-primary/20 border-2 border-primary/40 hover:shadow-primary/40 hover:border-primary/60 transition-all duration-300 bg-gradient-to-br from-white to-amber-50/50">
+          <Card className="shadow-lg border border-border hover:shadow-xl transition-all duration-200 bg-card">
             <CardHeader className="space-y-2">
               <div className="flex items-center gap-2">
                 <Icon name="Zap" className="w-6 h-6 text-primary" />
@@ -128,7 +123,7 @@ export default function Index() {
           </Card>
 
           <div className="space-y-4">
-            <Card className="shadow-xl shadow-primary/20 border-2 border-primary/40 bg-gradient-to-br from-white to-amber-50/50">
+            <Card className="shadow-lg border border-border bg-card">
               <CardHeader>
                 <div className="flex items-center gap-2">
                   <Icon name="Gift" className="w-6 h-6 text-accent" />
@@ -165,7 +160,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="shadow-xl shadow-primary/20 border-2 border-primary/40 bg-gradient-to-br from-white to-amber-50/50">
+            <Card className="shadow-lg border border-border bg-card">
               <CardContent className="pt-6">
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
